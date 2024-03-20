@@ -1,0 +1,145 @@
+{
+  "HeaderPanel": {
+    "NavigationSection": {
+      "Transactions": "Transactions",
+      "History": "History",
+      "Assets": "Assets",
+      "Settings":"Settings"
+    },
+    "UserSection": {
+      "Notifications": {
+        "Today": "Today",
+        "Yesterday": "Yesterday",
+        "NotificationItem": {
+          "MinutesShort": "m",
+          "HoursShort": "h",
+          "Ago": "ago"
+        }
+      },
+      "LogOut": {
+        "ConfirmModal": {
+          "Title": "Confirm",
+          "Content": "Confirm log out?",
+          "Buttons": {
+            "Confirm": "Confirm",
+            "Cancel": "Cancel"
+          }
+        }
+      }
+    },
+    "AuthSection": {
+      "LogIn": {
+        "Login": "Login",
+        "LogInModal": {
+          "LoginField": "Username or email",
+          "PasswordField": "Password",
+          "ForgotPasswordLink": "Forgot password?",
+          "Buttons": {
+            "Login": "Log in",
+            "SignUpLink": "Sign up here"
+          }
+        }
+      },
+      "SignUp": {
+        "SignUp": "Sign Up",
+        "SignUpModal": {
+          "Title": "Sign Up",
+          "UsernameField": "Username",
+          "EmailField": "Email",
+          "PasswordField": "Password",
+          "ConfirmPasswordField": "Confirm password",
+          "Buttons": {
+            "SignUp": "Sing Up",
+            "LoginLink": "Log in here"
+          }
+        },
+        "SuccessfulModal": {
+          "Title": "Successful sign up",
+          "Content": "We sent you an email with a link to log in. Please check your email."
+        }
+      },
+      "ForgotPassword": {
+        "ForgotPasswordModal": {
+          "Title": "Access recovery",
+          "EmailField": "Email",
+          "SendRecoveryLinkButton": "Send recovery link"
+        },
+        "SuccessfulSendRecoveryModal": {
+          "Title": "Email sent",
+          "Content": "We sent you an email with a link to restore password. Please check your email."
+        }
+      }
+    }
+  },
+  "ConfirmRegistration": {
+    "ErrorNotification": {
+      "Message": "No log in token provided",
+      "Description": "Please use link from email."
+    }
+  },
+  "SettingsPage": {
+    "PreferencesSection": {
+      "Title": "Preferences",
+      "LanguageSelector": "Language",
+      "CurrencySelector": "Currency",
+      "ChangeEmailButton": "Change email",
+      "ChangePasswordButton": "Change password",
+      "ChangePasswordModal": {
+        "Title": "Change password",
+        "OldPassword": "Old password",
+        "NewPassword": "New password",
+        "NewPasswordRepeat": "Repeat new password",
+        "SubmitButton": "Change password",
+        "SuccessChangePassword": {
+          "Title": "Password successfully updated!",
+          "Content": "Your password has successfully changed."
+        },
+        "FailChangePassword": {
+          "Title": "Old password is incorrect",
+          "Content": "Please try again."
+        }
+      },
+      "ChangeEmailModal": {
+        "Title": "Change email",
+        "Email": "Email",
+        "SubmitButton": "Send confirmation email",
+        "SuccessChangeEmail": {
+          "Title": "Confirmation email was sent!",
+          "Content": "Please check your email and use confirmation link in it."
+        },
+        "FailChangeEmail": {
+          "Title": "Email is already taken",
+          "Content": "Please use another one."
+        }
+      }
+    },
+    "SecuritySection":{
+      "Title": "Security"
+    },
+    "AccountSection":{
+      "Title": "Account",
+      "NicknameInput": "ID (Nickname)",
+      "SaveSettingButton": "Save setting"
+    }
+  },
+  "ChangePasswordPage": {
+    "Title": "Access recovery",
+    "PasswordField": "New password",
+    "RepeatPasswordField": "Repeat password",
+    "ConfirmButton": "Confirm",
+    "LinkExpired": {
+      "Title": "Password reset link has expired.",
+      "BackToMainPageButton": "Back to Main page"
+    },
+    "SuccessNotification": "Password has been successfully changed!"
+  },
+  "ConfirmEmailChangePage": {
+    "EmptyTokenError": {
+      "Message": "No change email token provided",
+      "Description": "Please use link from email."
+    },
+    "SuccessMessage": "Your email successfully updated!",
+    "FailMessage": "Your email was not updated. Please try again.",
+    "GoToHomePage": "Go to Home page"
+  }
+}

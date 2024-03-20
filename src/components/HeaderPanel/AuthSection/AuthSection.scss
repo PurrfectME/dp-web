@@ -1,0 +1,22 @@
+.auth-section {
+  display: flex;
+  width: 7%;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 125px;
+  align-items: center;
+  gap: 10px;
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      transition: 0.2s;
+      color: rgb(135, 135, 135);
+    }
+  }
+}

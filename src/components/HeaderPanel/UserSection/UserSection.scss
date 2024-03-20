@@ -1,0 +1,27 @@
+.user-section {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 255px;
+
+  .username {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .logout-button {
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
+      transition: 0.2s;
+      color: rgb(135, 135, 135);
+    }
+  }
+  
+  .notifications-icon {
+    cursor: pointer;
+  }
+}

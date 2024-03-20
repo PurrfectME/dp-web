@@ -1,0 +1,66 @@
+@use 'src/styles/theme-colors';
+
+.notification-item-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 10px;
+  padding: 8px 16px;
+
+  &:hover {
+    background-color: rgba(theme-colors.$grey2, 0.5);
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: theme-colors.$grey2;
+    cursor: pointer;
+  }
+
+  @each $color-name, $color-value in theme-colors.$theme-colors-map {
+    &.#{$color-name} {
+      .color-indicator {
+        background-color: $color-value;
+      }
+
+      mark {
+        color: $color-value;
+      }
+    }
+  }
+
+  .timestamp {
+    width: 70px;
+  }
+
+  .color-indicator {
+    width: 8px;
+    height: 48px;
+    border-radius: 4px;
+  }
+
+  .notification-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  .notification-payload {
+    display: flex;
+    flex-direction: column;
+
+    mark {
+      background-color: transparent;
+    }
+
+    .header {
+      font-weight: 700;
+    }
+
+    .content {
+      font-weight: 500;
+      color: theme-colors.$grey1;
+    }
+  }
+}

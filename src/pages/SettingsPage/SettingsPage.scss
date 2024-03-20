@@ -1,0 +1,131 @@
+@use 'src/styles/theme-colors';
+@import '../../components/TableWrapper/TableWrapper.scss';
+
+.layout-wrapper {
+  @extend .table-wrapper;
+
+  padding: 24px;
+}
+// map-get(theme-colors.$theme-colors-map, purple)
+.settings-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  h2 {
+    font-weight: bold;
+  }
+
+  & .security,
+  .account {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+
+      input {
+        border-radius: 32px;
+        box-shadow: none;
+
+        &:focus {
+          border-color: map-get(theme-colors.$theme-colors-map, purple);
+        }
+
+        &:hover {
+          border-color: map-get(theme-colors.$theme-colors-map, purple);
+        }
+      }
+    }
+
+    .btns {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        margin-top: 22px;
+        color: map-get(theme-colors.$theme-colors-map, purple);
+        border-color: map-get(theme-colors.$theme-colors-map, purple);
+
+        &:hover {
+          background-color: rgb(234, 229, 255);
+        }
+      }
+    }
+  }
+
+  #save-btn {
+    margin-top: 225px;
+    color: map-get(theme-colors.$theme-colors-map, white);
+    background-color: map-get(theme-colors.$theme-colors-map, purple);;
+  }
+
+  .action-section {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .preference-section {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+
+    .action-button {
+      display: block;
+      margin-bottom: 1%;
+    }
+
+    .section-divider {
+      border-left: 4px solid rgba(0, 0, 0, 0.06);
+      font-size: 48px;
+      margin-top: 2%;
+      height: inherit;
+    }
+
+    .preference-selectors {
+      width: 100%;
+    }
+  }
+
+  .selectors {
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+  label {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 2%;
+  }
+
+  .selector-wrapper {
+    margin-bottom: 10%;
+
+    
+
+    .selector {
+      margin-top: 2%;
+      width: 70%;
+    }
+
+    & .ant-select-selector {
+      border-radius: 20px !important;
+
+      & .ant-select-selection-item {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .input-item {
+    label {
+      color: gray;
+    }
+  }
+}

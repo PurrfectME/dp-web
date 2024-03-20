@@ -1,0 +1,41 @@
+.notifications-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  overflow: auto;
+  max-height: 400px;
+
+  .title {
+    width: 500px;
+  }
+
+  .day-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+
+    &:first-of-type {
+      margin-top: 8px;
+    }
+
+    .day-details {
+      display: flex;
+      justify-content: space-between;
+
+      .day-title {
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .date {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}

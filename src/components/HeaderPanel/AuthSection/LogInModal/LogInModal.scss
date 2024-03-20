@@ -1,0 +1,20 @@
+.singin-modal {
+  .signin-button {
+    width: 100%;
+  }
+
+  .signup-link {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .forgot-password-link {
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,24 @@
+.confirm-change-email-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .result-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      display: block;
+    }
+
+    .success-result {
+      color: green;
+    }
+
+    .fail-result {
+      color: red;
+    }
+  }
+}

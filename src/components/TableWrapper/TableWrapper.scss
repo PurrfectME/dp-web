@@ -1,0 +1,94 @@
+@use 'src/styles/theme-colors';
+
+.table-wrapper {
+    background-color: map-get(theme-colors.$theme-colors-map, white);
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 6px;
+
+    & .ant-table {
+        border-radius: 30px;
+    }
+
+    & .ant-table-pagination.ant-pagination {
+        margin-right: 50px;
+    }
+
+    & .ant-table-cell {
+        background-color: map-get(theme-colors.$theme-colors-map, white);
+
+        & .status {
+            border-radius: 20px;
+            width: 97px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & .pending {
+            color: map-get(theme-colors.$theme-colors-map, grey1);
+        }
+
+        & .completed {
+            color: map-get(theme-colors.$theme-colors-map, green);
+        }
+
+        & .cancelled {
+            border: none;
+        }
+    }
+
+    & .ant-pagination-item-link {
+        border: none !important;
+    }
+
+    & ul button:hover {
+        color: map-get(theme-colors.$theme-colors-map, purple) !important;
+    }
+
+    & .ant-pagination-item {
+        border: none;
+        border-radius: 16px;
+        border: 1px solid map-get(theme-colors.$theme-colors-map, grey1);
+
+        &:hover {
+            border-color: map-get(theme-colors.$theme-colors-map, purple);
+        }
+
+        & > a {
+            color: map-get(theme-colors.$theme-colors-map, grey1);
+
+            &:hover {
+                color: map-get(theme-colors.$theme-colors-map, purple);
+            }
+        }
+    }
+
+    & .ant-pagination {
+        display: flex;
+        justify-content: end;
+        margin: 12px 0;
+    }
+
+    & .ant-pagination-item-active {
+        background-color: map-get(theme-colors.$theme-colors-map, purple);
+
+        &:hover {
+            border-color: map-get(theme-colors.$theme-colors-map, purple);
+        }
+        
+        & > a {
+            color: map-get(theme-colors.$theme-colors-map, white);
+
+            &:hover {
+                color: map-get(theme-colors.$theme-colors-map, white);
+            }
+        }
+    }
+
+    & .anticon:hover {
+        color: map-get(theme-colors.$theme-colors-map, purple);
+    }
+
+}

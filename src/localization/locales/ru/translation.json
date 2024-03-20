@@ -1,0 +1,145 @@
+{
+  "HeaderPanel": {
+    "NavigationSection": {
+      "Transactions": "Транзакции",
+      "History": "История",
+      "Assets": "Ассеты",
+      "Settings": "Настройки"
+    },
+    "UserSection": {
+      "Notifications": {
+        "Today": "Сегодня",
+        "Yesterday": "Вчера",
+        "NotificationItem": {
+          "MinutesShort": "м",
+          "HoursShort": "ч",
+          "Ago": "назад"
+        }
+      },
+      "LogOut": {
+        "ConfirmModal": {
+          "Title": "Подверждение",
+          "Content": "Подтвердить выход из аккаунта?",
+          "Buttons": {
+            "Confirm": "Подтвердить",
+            "Cancel": "Отмена"
+          }
+        }
+      }
+    },
+    "AuthSection": {
+      "LogIn": {
+        "Login": "Логин",
+        "LogInModal": {
+          "LoginField": "Имя пользователя или электронная почта",
+          "PasswordField": "Пароль",
+          "ForgotPasswordLink": "Забыли пароль?",
+          "Buttons": {
+            "Login": "Войти",
+            "SignUpLink": "Нет аккаута?"
+          }
+        }
+      },
+      "SignUp": {
+        "SignUp": "Регистрация",
+        "SignUpModal": {
+          "Title": "Регистрация",
+          "UsernameField": "Имя пользователя",
+          "EmailField": "Электронная почта",
+          "PasswordField": "Пароль",
+          "ConfirmPasswordField": "Подтверждение пароля",
+          "Buttons": {
+            "SignUp": "Зарегестрироваться",
+            "LoginLink": "Уже есть аккаунт?"
+          }
+        },
+        "SuccessfulModal": {
+          "Title": "Успешная регистрация",
+          "Content": "Мы отправили электронное письмо с ссылкой для подтверждения регистрации. Пожалуйста, проверьте вашу электронную почту."
+        }
+      },
+      "ForgotPassword": {
+        "ForgotPasswordModal": {
+          "Title": "Восстановление доступа",
+          "EmailField": "Электронная почта",
+          "SendRecoveryLinkButton": "Отправить ссылку для восстановления"
+        },
+        "SuccessfulSendRecoveryModal": {
+          "Title": "Электронное письмо успешно отправлено",
+          "Content": "Мы отправили электронное письмо с ссылкой для восстановления пароля. Пожалуйста, проверьте вашу электронную почту."
+        }
+      }
+    }
+  },
+  "ConfirmRegistration": {
+    "ErrorNotification": {
+      "Message": "Неверный токен входа",
+      "Description": "Пожалуйста, воспользуйтесь корректной ссылкой из электронного письма."
+    }
+  },
+  "SettingsPage": {
+    "PreferencesSection": {
+      "Title": "Настройки",
+      "LanguageSelector": "Язык",
+      "CurrencySelector": "Валюта",
+      "ChangeEmailButton": "Обновить электронную почту",
+      "ChangePasswordButton": "Обновить пароль",
+      "ChangePasswordModal": {
+        "Title": "Обновление пароля.",
+        "OldPassword": "Старый пароль.",
+        "NewPassword": "Новый пароль.",
+        "NewPasswordRepeat": "Подтверждение пароля.",
+        "SubmitButton": "Обновить пароль",
+        "SuccessChangePassword": {
+          "Title": "Успешное обновление пароля!",
+          "Content": "Ваш пароль был успешно обновлен."
+        },
+        "FailChangePassword": {
+          "Title": "Старый пароль неверен.",
+          "Content": "Попробуйте ещё раз."
+        }
+      },
+      "ChangeEmailModal": {
+        "Title": "Обновление электронной почты.",
+        "Email": "Электронная почта.",
+        "SubmitButton": "Отправить письмо с подтверждением.",
+        "SuccessChangeEmail": {
+          "Title": "Электронное письмо успешно отправлено.",
+          "Content": "Проверьте вашу почту и перейдите по ссылке в письме для подтверждения."
+        },
+        "FailChangeEmail": {
+          "Title": "Указанная почта уже используется в системе.",
+          "Content": "Попробуйте использовать другую почту."
+        }
+      }
+    },
+    "SecuritySection":{
+      "Title": "Безопасность"
+    },
+    "AccountSection":{
+      "Title": "Аккаунт",
+      "NicknameInput": "ID (Никнейм)",
+      "SaveSettingButton": "Сохранить настройки"
+    }
+  },
+  "ChangePasswordPage": {
+    "Title": "Восстановление пароля",
+    "PasswordField": "Новый пароль",
+    "RepeatPasswordField": "Подтверждение пароля",
+    "ConfirmButton": "Сменить пароль",
+    "LinkExpired": {
+      "Title": "Истёк срок действия ссылки восстановления пароля.",
+      "BackToMainPageButton": "Вернуться на главную страницу"
+    },
+    "SuccessNotification": "Пароль был успешно изменён!"
+  },
+  "ConfirmEmailChangePage": {
+    "EmptyTokenError": {
+      "Message": "Неверный токен для обновления почты.",
+      "Description": "Пожалуйста, воспользуйтесь корректной ссылкой из электронного письма."
+    },
+    "SuccessMessage": "Ваша почта была успешна обновлена!",
+    "FailMessage": "Произошла ошибка во время обновления почты, возможно, кто-то другой уже занял её. Попробуйте ещё раз через время.",
+    "GoToHomePage": "Вернуться на главную"
+  }
+}
